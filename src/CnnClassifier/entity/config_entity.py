@@ -37,8 +37,3 @@ class TrainingConfig:
     params_image_size: list
     params_learning_rate: float
 
-# @dataclass(frozen=True)
-# class PrepareCallbacksConfig:
-#     root_dir: Path
-#     tensorboard_root_log_dir: Path
-#     checkpoint_model_filepath: Path

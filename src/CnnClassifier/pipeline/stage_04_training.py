@@ -3,9 +3,9 @@ from CnnClassifier.components.training import Training
 from CnnClassifier.config.congfiguration import ConfigurationManager
 from CnnClassifier import logger
 
-STAGE_NAME = 'Training Stage'
+STAGE_NAME = 'MODEL TRAINING STAGE'
 
-class PrepareTrainingPipeline:
+class ModelTrainingPipeline:
     def __init__(self):
         pass
 
@@ -27,9 +27,9 @@ class PrepareTrainingPipeline:
 if __name__ == '__main__':
     try:
         logger.info(f'>>>> {STAGE_NAME} started <<<<')
-        obj = PrepareTrainingPipeline()
+        obj = ModelTrainingPipeline()
         obj.main()
-        logger.info(f'>>>> {STAGE_NAME} completed')
+        logger.info(f'>>>> {STAGE_NAME} completed <<<<')
     except Exception as e:
         logger.exception(e)
         raise e

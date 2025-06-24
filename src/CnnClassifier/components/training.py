@@ -6,8 +6,6 @@ from CnnClassifier.entity.config_entity import TrainingConfig
 class Training:
     def __init__(self, config: TrainingConfig):
         self.config = config
-
-    tf.config.run_functions_eagerly(True)
     
     def get_base_model(self):
         self.model = tf.keras.models.load_model(
@@ -85,3 +83,4 @@ class Training:
             path=self.config.trained_model_path,
             model=self.model
         )
+
